@@ -1,0 +1,11 @@
+tenant: billyronks
+namespace: opensase-ecommerce
+topics:
+  - name: persistent://billyronks/opensase-ecommerce/command
+    partitions: 6
+  - name: persistent://billyronks/opensase-ecommerce/event
+    partitions: 6
+  - name: persistent://billyronks/opensase-ecommerce/audit
+    partitions: 6
+  - name: persistent://billyronks/global/observability
+    partitions: 6

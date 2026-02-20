@@ -1,0 +1,11 @@
+pulsar:
+  broker_url: pulsar://pulsar-broker.pulsar.svc.cluster.local:6650
+  http_url: http://pulsar-broker.pulsar.svc.cluster.local:8080
+  tenant: billyronks
+  namespace: opensase-ecommerce
+  producers:
+    - topic: persistent://billyronks/opensase-ecommerce/command
+    - topic: persistent://billyronks/opensase-ecommerce/event
+  consumers:
+    - topic: persistent://billyronks/opensase-ecommerce/audit
+      subscription: opensase-ecommerce-svc-sub
