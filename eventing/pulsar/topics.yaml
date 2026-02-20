@@ -1,0 +1,11 @@
+tenant: billyronks
+namespace: extract-ecommerce
+topics:
+  - name: persistent://billyronks/extract-ecommerce/command
+    partitions: 6
+  - name: persistent://billyronks/extract-ecommerce/event
+    partitions: 6
+  - name: persistent://billyronks/extract-ecommerce/audit
+    partitions: 6
+  - name: persistent://billyronks/global/observability
+    partitions: 6

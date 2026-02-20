@@ -1,0 +1,11 @@
+pulsar:
+  broker_url: pulsar://pulsar-broker.pulsar.svc.cluster.local:6650
+  http_url: http://pulsar-broker.pulsar.svc.cluster.local:8080
+  tenant: billyronks
+  namespace: extract-ecommerce
+  producers:
+    - topic: persistent://billyronks/extract-ecommerce/command
+    - topic: persistent://billyronks/extract-ecommerce/event
+  consumers:
+    - topic: persistent://billyronks/extract-ecommerce/audit
+      subscription: extract-ecommerce-svc-sub
